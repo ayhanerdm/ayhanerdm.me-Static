@@ -1,0 +1,374 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+:root {
+  --feminism-purple: #5B197B;
+  --blue-violet: #5B197B;
+  --soap: #DDCAED;
+  --ghost-white: #F8F8FF;
+  --anarchy: #DD0207;
+}
+
+:root {
+  --text-shadow: -4px -4px 9px rgba(0, 0, 0, 0.75);
+  --box-shadow: -4px -4px 28px -6px rgba(0, 0, 0, 0.75);
+  --user-cover: url("https://ayhanerdm.web.app/dist/img/SelmaCvalda.png");
+  --user-avatar: url("https://gravatar.com/avatar/8968d83ed7ecdfb62abd5d03b28ba34d?s=200");
+}
+
+div.status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(400px, 75vw);
+  color: var(--ghost-white);
+}
+div.status div.status-body > p {
+  font-size: 2.5rem;
+  word-spacing: 0.02em;
+  margin-block-start: 0;
+  margin-block-end: 1rem;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+div.status div.status-footer time {
+  font-size: 1rem;
+}
+div.status div.status-footer time::before {
+  content: "— ";
+}
+
+div.feeling {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: fixed;
+}
+
+div.feeling.angry {
+  background: linear-gradient(45deg, rgb(125, 0, 0) 68%, rgb(255, 0, 0) 99%);
+}
+
+div.feeling.sad {
+  background: linear-gradient(45deg, rgb(0, 3, 125) 68%, rgb(0, 6, 255) 99%);
+}
+
+div.feeling.gray {
+  background: linear-gradient(45deg, rgba(128, 128, 128, 0.7207925406) 68%, rgb(255, 255, 255) 99%);
+}
+
+div.feeling.happy {
+  background: linear-gradient(45deg, rgb(0, 125, 16) 68%, rgb(0, 225, 29) 99%);
+}
+
+div.feeling.complicated {
+  background: linear-gradient(45deg, rgb(0, 255, 10) 6%, rgb(0, 10, 255) 50%, rgb(255, 0, 0) 98%);
+}
+
+dialog {
+  border: none;
+}
+
+:root {
+  --feminism-purple: #5B197B;
+  --blue-violet: #5B197B;
+  --soap: #DDCAED;
+  --ghost-white: #F8F8FF;
+  --anarchy: #DD0207;
+}
+
+:root {
+  --text-shadow: -4px -4px 9px rgba(0, 0, 0, 0.75);
+  --box-shadow: -4px -4px 28px -6px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes WidthZeroToHundred {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+dialog.login-modal {
+  width: min(450px, 75vw);
+  background: none;
+  border: none;
+  color: var(--ghost-white);
+  text-shadow: var(--text-shadow);
+}
+
+div.login-form {
+  width: min(450px, 75vw);
+}
+div.login-form .close-login-modal {
+  display: none;
+}
+
+div.login-modal-header {
+  margin-bottom: 5px;
+}
+div.login-modal-header div.login-modal-title {
+  display: flex;
+  justify-content: space-between;
+  color: inherit;
+  text-shadow: inherit;
+}
+div.login-modal-header div.login-modal-title .close-login-modal {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+div.login-modal-header div.login-modal-title h1, div.login-modal-header div.login-modal-title h2, div.login-modal-header div.login-modal-title h3, div.login-modal-header div.login-modal-title h4, div.login-modal-header div.login-modal-title h5, div.login-modal-header div.login-modal-title h6 {
+  display: inline;
+}
+div.login-modal-header div.login-modal-title * {
+  margin-bottom: 0px;
+}
+
+div.login-modal-line {
+  width: 100%;
+  min-height: 5px;
+  display: block;
+  background-color: var(--soap);
+  border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+}
+div.login-modal-line .loading-bar {
+  width: 100%;
+  height: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  background: var(--feminism-purple);
+  animation: WidthZeroToHundred 0.5s alternate infinite;
+}
+
+div.login-modal-body {
+  width: 100%;
+  background-color: var(--ghost-white);
+  padding: 1em;
+  border-bottom-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+}
+div.login-modal-body div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+div.buttons {
+  margin-bottom: 0px !important;
+}
+
+div.login-status {
+  margin-bottom: 0 !important;
+}
+div.login-status :empty {
+  display: none;
+}
+div.login-status div.alert {
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+  text-shadow: none;
+}
+div.login-status pre {
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-shadow: none;
+}
+
+div.login-debug :empty {
+  display: none;
+}
+
+div.login-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  color: inherit;
+}
+div.login-links a:where(a, :link, :visited, :hover, :active) {
+  cursor: pointer;
+  color: inherit;
+  text-shadow: inherit;
+  text-decoration: none;
+}
+
+dialog.login-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+*:focus {
+  /* border-bottom: 4px solid var(--soap); */
+  /* outline: none; */
+}
+
+::selection {
+  color: var(--ghost-white);
+  background-color: var(--feminism-purple);
+}
+
+html {
+  scroll-behavior: smooth;
+  /* scroll-padding-top: 44px; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--ghost-white);
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: unset;
+  font-weight: unset;
+  line-height: unset;
+}
+body a:is(a, :link, :visited, :hover, :active) {
+  cursor: pointer;
+  color: black;
+  text-shadow: inherit;
+  text-decoration: none;
+}
+
+div.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--blue-violet);
+  width: 0%;
+  z-index: 3;
+}
+
+nav.navbar {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: #333;
+  color: var(--ghost-white);
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+nav.navbar a, nav.navbar a:link, nav.navbar a:visited, nav.navbar a:hover, nav.navbar a:active {
+  display: block;
+  color: inherit;
+  height: 100%;
+  padding: 1em 0.6em;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+nav.navbar a:hover, nav.navbar a:focus {
+  background-color: rgb(80, 79, 79);
+  outline: none;
+}
+nav.navbar > a:not(:last-child) {
+  /* border-right: 1px solid var(--ghost-white); */
+}
+
+div.fullscreen {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 3rem;
+  z-index: 0;
+}
+
+div.landing-cover {
+  background: rgba(0, 0, 0, 0.792) var(--user-cover);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+div.landing-cover div.avatar {
+  width: min(150px, 40vw);
+  aspect-ratio: 1;
+  background: var(--user-avatar);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.2em;
+  margin: 0;
+}
+div.landing-cover div.title {
+  text-align: center;
+  width: min(400px, 60vw);
+}
+div.landing-cover div.title h1 {
+  margin: 0;
+  color: var(--ghost-white);
+  font-size: 2.5rem;
+}
+div.landing-cover div.title h1 a:is(a, :link, :visited, :hover, :active) {
+  cursor: pointer;
+  color: inherit;
+  text-shadow: inherit;
+  text-decoration: none;
+}
+div.landing-cover div.title p {
+  text-align: justify;
+  color: var(--ghost-white);
+  font-size: 1.2rem;
+}
+
+div.links-page * {
+  margin: 0;
+  padding: 0;
+}
+div.links-page h2 {
+  margin-bottom: 1em;
+}
+div.links-page ul {
+  list-style: none;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+div.links-page ul li {
+  position: relative;
+  padding: 1em 1em;
+}
+div.links-page ul li i.fa-brands {
+  margin-right: 1rem;
+}
+div.links-page ul li a::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+div.links-page ul li:not(:last-child) {
+  border-bottom: 1px solid #333;
+}
+
+/*# sourceMappingURL=style.css.map */

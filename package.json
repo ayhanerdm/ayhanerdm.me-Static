@@ -1,0 +1,26 @@
+{
+  "name": "ayhanerdm-static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "SassWatch": "sass --watch src/Sass:dist/css",
+    "TypeScriptWatch": "tsc --watch",
+    "Deploy": "firebase deploy --only hosting"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayhanerdm/ayhanerdm.me-Static.git"
+  },
+  "author": "Ayhan Erdem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayhanerdm/ayhanerdm.me-Static/issues"
+  },
+  "homepage": "https://github.com/ayhanerdm/ayhanerdm.me-Static#readme",
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "sass": "^1.53.0",
+    "typescript": "^4.7.4"
+  }
+}
