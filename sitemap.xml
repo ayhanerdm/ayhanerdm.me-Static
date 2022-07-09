@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://static.ayhanerdm.me/dist/css/sitemap.css"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ayhanerdm.web.app/</loc>
-    <lastmod>2022-27-06</lastmod>
+    <lastmod>2022-27-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://ayhanerdm.web.app/#landing</loc>
+    <lastmod>2022-27-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://ayhanerdm.web.app/#status</loc>
+    <lastmod>2022-27-08</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <url>
+    <loc>https://ayhanerdm.web.app/#links</loc>
+    <lastmod>2022-27-08</lastmod>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>

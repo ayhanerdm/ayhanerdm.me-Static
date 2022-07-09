@@ -1,7 +1,5 @@
 import { Login, LoginInit } from "./modules/Login.js";
 
-LoginInit();
-
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('https://ayhanerdm.web.app/service-worker.js')
         .then(function (registration) {

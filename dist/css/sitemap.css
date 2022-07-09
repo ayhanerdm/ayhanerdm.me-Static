@@ -1,0 +1,31 @@
+@charset "UTF-8";
+urlset {
+  border: solid 1px #333;
+  border-radius: 5px;
+  margin: 2rem;
+}
+urlset url {
+  display: block;
+  padding: 1rem;
+}
+urlset url *:not(:last-child) {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+urlset url loc::before {
+  content: "— URL: ";
+}
+urlset url lastmod::before {
+  content: "— Last Modified: ";
+}
+urlset url changefreq::before {
+  content: "— Change Frequency: ";
+}
+urlset url priority::before {
+  content: "— Priority: ";
+}
+urlset url:not(:last-child) {
+  border-bottom: solid 1px #333;
+}
+
+/*# sourceMappingURL=sitemap.css.map */

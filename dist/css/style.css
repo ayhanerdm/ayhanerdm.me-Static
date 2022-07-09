@@ -9,10 +9,126 @@
 }
 
 :root {
+  --gradient-direction: to right;
+}
+
+.rainbow-gradient, .pride-gradient, .gay-radient {
+  background: linear-gradient(var(--gradient-direction), rgb(237, 34, 36), rgb(243, 91, 34), rgb(249, 150, 33), rgb(245, 193, 30), rgb(241, 235, 27) 27%, rgb(241, 235, 27), rgb(241, 235, 27) 33%, rgb(99, 199, 32), rgb(12, 155, 73), rgb(33, 135, 141), rgb(57, 84, 165), rgb(97, 55, 155), rgb(147, 40, 142));
+}
+
+.rainbow-poc-gradient {
+  background: linear-gradient(var(--gradient-direction), rgb(0, 0, 0), rgb(54, 35, 18), rgb(120, 79, 23), rgb(181, 63, 27), rgb(237, 34, 36), rgb(243, 91, 34), rgb(249, 150, 33), rgb(245, 193, 30), rgb(241, 235, 27) 48%, rgb(241, 235, 27), rgb(241, 235, 27) 52%, rgb(99, 199, 32), rgb(12, 155, 73), rgb(33, 135, 141), rgb(57, 84, 165), rgb(97, 55, 155), rgb(147, 40, 142));
+}
+
+.bisexual-gradient {
+  background: linear-gradient(var(--gradient-direction), rgb(255, 0, 128), rgb(200, 37, 157), rgb(140, 71, 153), rgb(68, 46, 159), rgb(0, 50, 160));
+}
+
+.gay-man-gradient {
+  background: linear-gradient(var(--gradient-direction), rgb(7, 141, 111), rgb(152, 202, 153), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(205, 208, 234), rgb(123, 173, 226) 70%, rgb(69, 76, 189), rgb(63, 26, 121));
+}
+
+.lesbian-gradient {
+  background: linear-gradient(var(--gradient-direction), rgb(213, 44, 0), rgb(226, 150, 136), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(210, 127, 164), rgb(162, 2, 98));
+}
+
+.asexual-gradient {
+  background: linear-gradient(var(--gradient-direction), rgb(0, 0, 0), rgb(81, 81, 80), rgb(163, 162, 160), rgb(209, 208, 208), rgb(255, 255, 255) 60%, rgb(255, 255, 255), rgb(255, 255, 255) 70%, rgb(185, 151, 185), rgb(101, 46, 129));
+}
+
+.pansexual-gradient {
+  background: linear-gradient(var(--gradient-direction), rgb(255, 30, 140) 10%, rgb(255, 102, 57), rgb(255, 230, 29) 40%, rgb(255, 230, 29), rgb(255, 230, 29) 60%, rgb(87, 229, 98), rgb(31, 179, 253) 85%, rgb(31, 179, 253), rgb(31, 179, 253));
+}
+
+.trans-graient {
+  background: linear-gradient(var(--gradient-direction), rgb(85, 205, 252), rgb(179, 157, 233), rgb(247, 168, 184), rgb(246, 216, 221), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(246, 216, 221), rgb(247, 168, 184), rgb(179, 157, 233), rgb(85, 205, 252));
+}
+
+.gay-bear-garient {
+  background: linear-gradient(var(--gradient-direction), rgb(129, 69, 45), rgb(196, 88, 26), rgb(255, 219, 87), rgb(255, 251, 204), rgb(255, 255, 255), rgb(54, 54, 54), rgb(0, 0, 0));
+}
+
+:root {
   --text-shadow: -4px -4px 9px rgba(0, 0, 0, 0.75);
   --box-shadow: -4px -4px 28px -6px rgba(0, 0, 0, 0.75);
   --user-cover: url("https://ayhanerdm.web.app/dist/img/SelmaCvalda.png");
   --user-avatar: url("https://gravatar.com/avatar/8968d83ed7ecdfb62abd5d03b28ba34d?s=200");
+}
+
+input[type=checkbox] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.1em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox]::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-color: currentColor;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=checkbox] + input[type=checkbox] {
+  margin-top: 1em;
+}
+
+input[type=checkbox]:disabled {
+  color: #333;
+  cursor: not-allowed;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  line-height: inherit;
+  outline: none;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  border: 1px solid #333;
+  padding: 0.5rem;
+  border-radius: 0.25em;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: #333;
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+option {
+  padding: 2rem;
 }
 
 div.status {
@@ -23,8 +139,9 @@ div.status {
   color: var(--ghost-white);
 }
 div.status div.status-body > p {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   word-spacing: 0.02em;
+  text-align: justify;
   margin-block-start: 0;
   margin-block-end: 1rem;
   margin-inline-start: 0;
@@ -42,7 +159,8 @@ div.feeling {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-position: fixed;
+  background-position: center;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 div.feeling.angry {
@@ -55,6 +173,10 @@ div.feeling.sad {
 
 div.feeling.gray {
   background: linear-gradient(45deg, rgba(128, 128, 128, 0.7207925406) 68%, rgb(255, 255, 255) 99%);
+}
+
+div.feeling.black {
+  background: #000;
 }
 
 div.feeling.happy {
@@ -321,6 +443,7 @@ div.landing-cover div.avatar {
 div.landing-cover div.title {
   text-align: center;
   width: min(400px, 60vw);
+  color: var(--ghost-white);
 }
 div.landing-cover div.title h1 {
   margin: 0;
@@ -337,6 +460,14 @@ div.landing-cover div.title p {
   text-align: justify;
   color: var(--ghost-white);
   font-size: 1.2rem;
+  margin-bottom: 0.2em;
+}
+div.landing-cover div.title p.pronoun {
+  text-align: center;
+  font-size: 1rem;
+}
+div.landing-cover div.title a {
+  color: inherit;
 }
 
 div.links-page * {
